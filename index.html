@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Quiz Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="quiz-container">
-        <h1>Quiz Game</h1>
-        <div id="question-area"></div>
-        <div id="answer-buttons" class="btn-container">
-            <button class="btn" data-index="0">Answer 1</button>
-            <button class="btn" data-index="1">Answer 2</button>
-            <button class="btn" data-index="2">Answer 3</button>
-            <button class="btn" data-index="3">Answer 4</button>
-        </div>
-        <div id="score-area">Score: <span id="score">0</span></div>
-        <button id="next-question" class="btn">Next Question</button>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">MCQs test</h2>
+        <ul>
+          <li>
+            <input class="answer" type="radio" name="answer" id="a" />
+            <label for="a" id="optionA">Option A</label>
+          </li>
+
+          <li>
+            <input class="answer" type="radio" name="answer" id="b" />
+            <label for="b" id="optionB">Option B</label>
+          </li>
+
+          <li>
+            <input class="answer" type="radio" name="answer" id="c" />
+            <label for="c" id="optionC">Option C</label>
+          </li>
+
+          <li>
+            <input class="answer" type="radio" name="answer" id="d" />
+            <label for="d" id="optionD">Option D</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit" class="btn">Submit</button>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
